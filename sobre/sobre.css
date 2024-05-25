@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3c0c7b;
+  }
+  
+  header {
+    background-color: #3c0c7b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 0 20px;
+}
+
+.logo {
+    max-width: 90px;
+    height: auto;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+}
+
+.navigation ul li {
+    margin-right: 25px;
+}
+
+.navigation ul li:last-child {
+    margin-right: 0;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    font-size: 20px;
+}
+
+.navigation ul li a:hover {
+    color: #7b40c9;
+}
+
+.content {
+  padding: 50px;
+}
+
+.information {
+  max-width: 800px;
+  
+
+}
+
+.information h2 {
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.information h2 span {
+  color: #7b40c9; /* Cor diferente para o primeiro span */
+}
+
+.information h2 span:last-child {
+  color: #5e2aa1; /* Cor diferente para o segundo span */
+}
+
+.information p {
+  font-size: 22px;
+  color: #ffffff;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.functions {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.functions h1 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.functions h1 span {
+  color: #7b40c9; /* Cor diferente para o span */
+}
+
+.content-box {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.box {
+  flex: 1;
+  max-width: 400px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #5e2aa1;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.box ion-icon {
+  font-size: 46px;
+  color: #ffffff;
+}
+
+.box h2 {
+  font-size: 32px;
+  color: #b27bff;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Estilos para telas menores ou iguais a 480px */
+@media screen and (max-width: 480px) {
+  header {
+    height: 10vh;
+    padding: 0 15px;
+  }
+
+  .logo {
+    max-width: 70px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .information h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .information p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .functions h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .box {
+    max-width: 300px;
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .box ion-icon {
+    font-size: 42px;
+  }
+
+  .box h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .box p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .information h2 {
+    font-size: 32px;
+  }
+
+  .information p {
+    font-size: 18px;
+  }
+
+  .functions h1 {
+    font-size: 32px;
+  }
+}
+
+/* Estilos para telas maiores que 768px e menores ou iguais a 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .content-box {
+    flex-direction: column;
+  }
+
+  .box {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+
+  .box ion-icon {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login-Smart Safe</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <img src="../logoo.png" alt="" class="logo">
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="box1">
+        <h1>Smart<span> Safe</span></h1>
+        <p>A segurança imediata na palma da sua mão!</p>
+        <a href="../download/download.html"><button class="button">Baixe o nosso app</button></a>
+      </div>
+
+      <div class="box2">
+        <img src="../img/fundo.png" alt="" class="fundo">
+        <img src="../logoo.png" alt="">
+        <h1>Login</h1>
+        <form action="../home/home.html" id="loginForm">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <button type="submit" class="Button">Fazer Login</button>
+        </form>
+      </div>
+      
+    </div>
+  </section>
+
+  <div class="redes-sociais">
+    <a href="https://www.facebook.com/PepsiBrasil/?locale=pt_BR" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+  </div>
+
+  <script>
+    document.querySelector("#loginForm").addEventListener("submit", function(event) {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        // Verifica se ambos os campos estão preenchidos
+        if (email.trim() === "" || password.trim() === "") {
+            // Se um dos campos estiver vazio, impede o envio do formulário
+            event.preventDefault();
+            alert("Por favor, preencha todos os campos.");
+        } else {
+            // Simula o login bem-sucedido
+            // Aqui você pode verificar as credenciais com um backend real
+            // Se o login for bem-sucedido, redirecione o usuário para a página desejada
+            window.location.href("/home/home.html");
+            console.log("você")
+        }
+    });
+</script>
+
+</body>
+
+</html>
