@@ -47,16 +47,16 @@ body {
   
   .box2 {
     align-items: center;
+    
   }
 
-  .box2 .fundo{
+  .box2 .fundo{ 
     width: 600px;
     position: absolute;
     z-index: -1;
-    background-size: cover; /* Para preencher o tamanho da div */
-    background-repeat: no-repeat; /* Para não repetir a imagem */
-    background-position: center; /* Para centralizar a imagem */
     border-radius: 140px; /* Isso deve ser suficiente */
+    object-fit: cover;
+    object-position: left;
   }
   
   
