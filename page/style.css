@@ -1,0 +1,139 @@
+@import url("../config.css");
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--Basic);
+}
+
+.cabecalho {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    padding: 10px 0;
+    height: auto;
+    width: 100vw;
+    font-family: var(--Basic);
+    background: linear-gradient(to right, #6120F8 50%, #391392 100%);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.35);
+    z-index: 10;
+}
+
+.cabecalho-logo {
+    position: relative;
+    height: 70px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 2rem;
+    font-size: 20px;
+}
+
+.cabecalho-menu a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+main {
+    position: relative;
+    top: 90px;
+}
+
+.home {
+    width: 100%;
+    height: 700px;
+    background-image: url('../public/image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco);
+    gap: 30px;
+}
+
+.home h2 {
+    font-family: var(--Basic);
+    font-size: 5rem;
+    line-height: 70px;
+    text-align: center;
+}
+
+.home p {
+    font-family: var(--Jura);
+    font-size: 1.8rem;
+    line-height: 32px;
+    text-align: center;
+    max-width: 700px;
+}
+
+.sobre {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 90px 0px 140px;
+}
+
+.sobre h1 {
+    font-size: var(--titulo);
+    color: var(--rojo-one);
+}
+
+.sobre p {
+    font-family: var(--Jura);
+    font-size: 2.5rem;
+    width: 80vw;
+    text-align: justify;
+}
+
+.sobre-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.linha-laranja-sobre {
+    height: 4px;
+    background-color: var(--laranja);
+    width: 600px;
+}
+
+.funcoes {
+    width: 100%;
+    height: var(--section);
+    background-color: var(--rojo-two);
+    padding: 0 10vw;
+}
+
+.funcoes-titulo {
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+
+.funcoes-titulo h2 {
+    font-size: var(--titulo);
+}
+
+.linha-laranja-funcoes {
+    height: 4px;
+    background-color: var(--laranja);
+    width: 300px;
+}
+
+/* Card Funções */
+
