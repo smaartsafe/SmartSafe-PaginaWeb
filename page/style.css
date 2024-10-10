@@ -115,6 +115,11 @@ main {
     height: var(--section);
     background-color: var(--rojo-two);
     padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 8rem;
 }
 
 .funcoes-titulo {
@@ -137,3 +142,62 @@ main {
 
 /* Card Funções */
 
+.card {
+    width: 230px;
+    height: 260px;
+    background-color: var(--branco);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon {
+    width: 100px;
+    height: 100px;
+    background-color: var(--rojo-three);
+    border-radius: 30px;
+    position: absolute;
+    margin-bottom: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icon>i {
+    font-size: 3rem;
+    color: var(--branco);
+    font-weight: 200;
+}
+
+.card>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    gap: .3rem;
+    color: var(--preto);
+}
+
+.funcoes-cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.card-titulo {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.card-info {
+    width: 80%;
+    text-align: center;
+    font-family: var(--Jura);
+    font-weight: 700;
+}
