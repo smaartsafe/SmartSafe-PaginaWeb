@@ -8,6 +8,11 @@ body {
     font-family: var(--Basic);
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
 .cabecalho {
     position: fixed;
     display: flex;
@@ -18,14 +23,14 @@ body {
     height: auto;
     width: 100vw;
     font-family: var(--Basic);
-    background: linear-gradient(to right, #6120F8 50%, #391392 100%);
+    background: var(--gradient);
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.35);
     z-index: 10;
 }
 
 .cabecalho-logo {
     position: relative;
-    height: 70px;
+    height: 60px;
 }
 
 .cabecalho-menu {
@@ -41,7 +46,7 @@ body {
 
 main {
     position: relative;
-    top: 90px;
+    top: 80px;
 }
 
 .home {
@@ -59,11 +64,21 @@ main {
     gap: 30px;
 }
 
+.home-filter {
+    width: 100%;
+    height: 700px;
+    top: 0px;
+    background: black;
+    opacity: 0.3;
+    position: absolute;
+}
+
 .home h2 {
     font-family: var(--Basic);
     font-size: 5rem;
     line-height: 70px;
     text-align: center;
+    z-index: 2;
 }
 
 .home p {
@@ -72,6 +87,7 @@ main {
     line-height: 32px;
     text-align: center;
     max-width: 700px;
+    z-index: 2;
 }
 
 .sobre {
@@ -112,9 +128,8 @@ main {
 
 .funcoes {
     width: 100%;
-    height: var(--section);
+    padding: 60px 10vw 140px;
     background-color: var(--rojo-two);
-    padding: 0 10vw;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -143,30 +158,43 @@ main {
 /* Card Funções */
 
 .card {
-    width: 230px;
-    height: 260px;
+    max-width: 280px;
+    height: 300px;
     background-color: var(--branco);
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all .3s;
+    opacity: .9;
+}
+
+.funcoes-cards:hover .card {
+    transform: scale(1);
+}
+
+.card:hover {
+    transform: scale(1.1) !important;
+    opacity: 1 !important;
 }
 
 .card-icon {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background-color: var(--rojo-three);
     border-radius: 30px;
     position: absolute;
-    margin-bottom: 270px;
+    margin-bottom: 290px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.card-icon>i {
-    font-size: 3rem;
+.card-icon>svg {
+    width: 4rem;
     color: var(--branco);
     font-weight: 200;
 }
@@ -200,4 +228,171 @@ main {
     text-align: center;
     font-family: var(--Jura);
     font-weight: 700;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+    padding: 70px 0;
+}
+
+.video-titulo {
+    color: var(--rojo-one);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.video-titulo h2 {
+    font-size: var(--titulo);
+}
+
+.linha-laranja-video {
+    height: 4px;
+    background-color: var(--laranja);
+    width: 470px;
+}
+
+.video-yt {
+    width: 42vw;
+    height: 50vh;
+}
+
+.baixar {
+    background: var(--rojo-two);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0;
+    gap: 2rem;
+}
+
+.baixar-qrcode {
+    width: 250px;
+    height: 250px;
+}
+
+.baixar-qrcode img {
+    width: 100%;
+    height: 100%;
+}
+
+.baixar-textos {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.baixar-textos h2 {
+    font-size: var(--titulo);
+    color: var(--branco);
+    line-height: 80px;
+    width: 600px;
+}
+
+.baixar-download {
+    text-decoration: none;
+}
+
+.download-btn {
+    width: 410px;
+    height: 85px;
+    background: var(--amarelo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.download-btn p {
+    font-family: var(--Jura);
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--rojo-two);
+}
+
+.textos-opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.textos-opcoes>p {
+    color: var(--branco);
+    font-size: 22px;
+    width: 390px;
+    text-align: center;
+}
+
+.rodape {
+    width: 100%;
+    background: var(--preto-two);
+    padding: 50px 2vw 20px;
+    color: var(--cinza);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 80px;
+}
+
+.rodape-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rodape-info img {
+    width: 100px;
+}
+
+.info-redes h3 {
+    font-size: 2rem;
+}
+
+.redes-icon {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 8px;
+}
+
+.redes-icon a {
+    text-decoration: none;
+    color: var(--cinza);
+
+}
+
+.redes-icon a:nth-child(2) svg {
+    width: 1.6rem;
+    cursor: pointer;
+}
+
+.redes-icon a:nth-child(1) svg {
+    width: 2rem;
+    cursor: pointer;
+}
+
+.rodape-direitos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape-direitos>p {
+    font-family: var(--Jura);
+    font-weight: 700;
+    font-size: 20px;
+    word-break: normal;
+    width: 100%;
+    text-align: center;
+}
+
+.linha-laranja-rodape {
+    height: 4px;
+    background-color: var(--laranja);
+    width: 100%;
 }

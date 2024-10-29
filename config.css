@@ -2,11 +2,16 @@
 
 :root {
     --laranja: #F98E12;
+    --amarelo: #EEAA34;
     --branco: #FFF;
+    --cinza: #C1C1C1;
     --preto: #1E1E1E;
+    --preto-two: #111111;
     --rojo-one: #26076D;
     --rojo-two: #391392;
     --rojo-three: #672BF3;
+    --gradient: linear-gradient(to right, #6120F8 50%, #391392 100%);
+    ;
 
     /* Fontes */
     --Basic: "Basic";
