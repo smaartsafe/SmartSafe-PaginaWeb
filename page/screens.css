@@ -1,0 +1,73 @@
+@media (max-width: 720px) {
+
+    .sections {
+
+        h1,
+        h2 {
+            font-size: var(--titulo720);
+        }
+
+        .linha-laranja {
+            width: 100%;
+        }
+    }
+
+    .sobre {
+        gap: 3rem;
+
+        .sobre-titulo {
+            width: 400px;
+        }
+
+        p {
+            font-size: var(--paragrafo720);
+        }
+    }
+
+    .home {
+        h2 {
+            font-size: var(--titulo-home720);
+            line-height: 60px;
+        }
+
+        p {
+            font-size: var(--paragrafo-home720);
+        }
+    }
+
+    .funcoes {
+        .funcoes-titulo {
+            width: 220px;
+        }
+    }
+
+    .video {
+        .video-titulo {
+            width: 330px;
+        }
+
+        .video-yt {
+            width: 78vw;
+            height: 39vh;
+        }
+
+    }
+
+    .baixar {
+
+        .baixar-textos {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .baixar-qrcode {
+            display: none;
+        }
+
+        h2 {
+            font-size: var(--titulo-baixar720);
+        }
+    }
+
+}

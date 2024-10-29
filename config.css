@@ -22,4 +22,11 @@
     --section: 700px;
     --titulo: 74px;
 
+    /*Tela W-720*/
+    --titulo720: 3rem;
+    --paragrafo720: 1.5rem;
+    --titulo-home720: 4rem;
+    --paragrafo-home720: 24px;
+    --titulo-baixar720: 2rem;
+
 }
