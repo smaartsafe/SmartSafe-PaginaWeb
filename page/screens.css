@@ -1,3 +1,12 @@
+@media (max-width: 500px) {
+    .baixar-download {
+
+        .download-btn {
+            width: 80vw;
+        }
+    }
+}
+
 @media (max-width: 720px) {
 
     .sections {
@@ -25,6 +34,9 @@
     }
 
     .home {
+
+        height: 550px;
+
         h2 {
             font-size: var(--titulo-home720);
             line-height: 60px;
@@ -35,9 +47,18 @@
         }
     }
 
+    .home-filter {
+        height: 550px;
+
+    }
+
     .funcoes {
         .funcoes-titulo {
             width: 220px;
+        }
+
+        .funcoes-cards {
+            gap: 6rem;
         }
     }
 
@@ -55,10 +76,27 @@
 
     .baixar {
 
+        padding: 150px 5vw;
+
         .baixar-textos {
             text-align: center;
             align-items: center;
             justify-content: center;
+
+            h2 {
+                word-break: break-all;
+                width: auto;
+                line-height: 30px;
+
+            }
+
+            .baixar-download {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+
         }
 
         .baixar-qrcode {
@@ -70,4 +108,19 @@
         }
     }
 
+}
+
+@media (max-width: 1000px) {
+    .baixar {
+
+        .baixar-textos {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .baixar-qrcode {
+            display: none;
+        }
+    }
 }
